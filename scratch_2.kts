@@ -71,4 +71,14 @@ The other is as though everything is a miracle.
 -Einstein
  */
 
+//String Interpolation
 
+val years = 12
+val message1 = "एक तप म्हणजे $years वर्षं "
+
+println(message1)
+
+val book = "Little Women"
+val bookNameLengthMsg = "Length of book ( $book ) name is " +
+        "${book.length}"
+println(bookNameLengthMsg)
