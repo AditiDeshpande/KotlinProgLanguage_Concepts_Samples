@@ -39,6 +39,14 @@ class DailyActivity(var actId: Int , var actName: String = ""){
     init {
         actName = actName.toUpperCase()
     }
+    //It's important to this secondary constructor
+    //to call base constructor
+    //constructor will be more useful and explained
+    //more in the topic of inheritance
+    constructor(actDesc: String): this(0, ""){
+        //This block of constructor is equivalent to
+        //init block
+    }
 }
 
 var dailyActivity = DailyActivity(25 , "Painting")
