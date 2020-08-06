@@ -16,6 +16,12 @@ class DailyActivity(var actId: Int, var actName: String = "", val yearOfBirth: I
             }
                 field = value
         }
+
+    fun activityAsString(): String{
+        return "Activity Id: $actId - " +
+                "Activity Name: $actName - " +
+                "Activity Status: $actStatus"
+    }
 }
 
 var dailyActivity = DailyActivity(25, "Painting",1987)
@@ -27,10 +33,17 @@ println("Activity Id: ${dailyActivity.actId}" +
         "\nAge : ${dailyActivity.age}" +
         "\nActivity Status : ${dailyActivity.actStatus}")
 
+println(dailyActivity.activityAsString())
+
+
 /*
 Output
 Activity Id: 25
 Activity Name: Painting
 Age : 33
 Activity Status : STComplete
+
+activityAsString Output
+Activity Id: 25 - Activity Name: Painting - Activity Status: STComplete
+
  */
