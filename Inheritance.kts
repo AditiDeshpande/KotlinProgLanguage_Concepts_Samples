@@ -15,7 +15,7 @@ class ProgLangs{}
 class KotlinLang: ProgLangs(){}
  */
 
-open class ProgLangs{
+open class ProgLangs(){
 open fun syntax(){
     println("Syntax means way to declare variables" +
             "whether the ; is need to notify End" +
@@ -23,7 +23,7 @@ open fun syntax(){
 }
 }
 
-class KotlinLang: ProgLangs(){
+class KotlinLang: ProgLangs{
 override fun syntax(){
     //'syntax' in 'ProgLangs' is final and cannot be overridden
     //so need to declare syntax function as open too
@@ -37,9 +37,9 @@ override fun syntax(){
 // ProgLang inheritance for KotlinLang
 //This is a bit tricky to understand.. :(
 //Need to search for some explanation.
-    /*constructor(): super(){
+    constructor(): super(){
 
-    }*/
+    }
 }
 
 val kotlinLang = KotlinLang()
